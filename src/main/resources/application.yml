@@ -1,0 +1,15 @@
+springdoc:
+  swagger-ui:
+    path: /api-test  # Swagger-UI의 경로를 /api-test로 설정
+
+    groups-order: DESC  # 그룹 순서를 내림차순으로 설정 (path, query, body, response 순으로 출력)
+
+    tags-sorter: alpha  # 태그를 알파벳 순으로 정렬
+
+    operations-sorter: method  # 작업을 메서드 순으로 정렬 (delete - get - patch - post - put 순으로 정렬, alpha를 사용하면 알파벳 순으로 정렬 가능)
+
+  paths-to-match:
+    - /api/**  # Swagger-UI에 표시할 API의 엔드포인트 패턴
+
+  api-docs:
+    path: /api  # API 문서의 경로를 /api로 설정
